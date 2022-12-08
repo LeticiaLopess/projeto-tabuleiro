@@ -1,8 +1,13 @@
 import styles from '../styles/Subdivisao.module.css'
 
-export default function Subdivisao (props) {
+export default function Subdivisao({preta}) {
+    console.log(preta)
     return (
-        <div className={styles.subdivisao}>
+        <div 
+            style={{
+                backgroundColor: preta ? "red": "white"
+            }}
+            className={styles.subdivisao}>
         </div>
     )
     
